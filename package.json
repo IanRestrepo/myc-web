@@ -1,0 +1,19 @@
+{
+  "name": "mycweb",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/db": "^0.14.0-beta.2",
+    "@astrojs/node": "^9.0.0-beta.2",
+    "@astrojs/tailwind": "^5.1.1",
+    "astro": "^5.0.0-beta.3",
+    "tailwindcss": "^3.4.13"
+  }
+}
