@@ -1,0 +1,55 @@
+---
+import TeamCard from '../TeamCard/index.astro';
+const people = [
+  { name: 'Paul V', affiliation: 'Pantera Capital', image: '/placeholder.svg?height=80&width=80' },
+  { name: 'Daniel Gulati', affiliation: 'Comcast Ventures', image: '/placeholder.svg?height=80&width=80' },
+  { name: 'Alexandr Wang', affiliation: 'CEO, Scale', image: '/placeholder.svg?height=60&width=60' },
+  { name: 'Eddy Lu', affiliation: 'CEO, GOAT Group', image: '/placeholder.svg?height=60&width=60' },
+  { name: 'Carl Pei', affiliation: 'CEO, Nothing', image: '/placeholder.svg?height=60&width=60' },
+  { name: 'Bo Jiang', affiliation: 'CEO, Lithic', image: '/placeholder.svg?height=60&width=60' },
+];
+---
+<section class="text-white">
+  <div class="container px-6 mx-auto">
+      <p class="max-w-2xl mx-auto my-6 text-center text-white dark:text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+      </p>
+
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+        <TeamCard
+            username={'Manuel Cortes'}
+            userRol={'CEO - Founder'}
+            userDescription={"Manuel Cortés es un muchacho echao' pa'lante, emprendedor y con ganas de comerse el mundo, fundador de M&C Games Studio."}
+            userImage={'https://pbs.twimg.com/profile_images/1806794365236379648/RXOXDq4K_400x400.jpg'}
+        />
+
+        <TeamCard
+            username={'Ian Restrepo'}
+            userRol={'Lead Software Engineer - Ex-Developer'}
+            userDescription={"Ian es un emprendedor, ingeniero en software y creador de esta web, el principal desarrollador del software de M&C Games Studio"}
+            userImage={'https://pbs.twimg.com/profile_images/1833973883319230464/ZNj7as8S_400x400.jpg'}
+        />
+
+        <TeamCard
+            username={'Parramotive'}
+            userRol={'Chassis Engineer - Developer'}
+            userDescription={"Parra es un bacan, maestro de los autos y el encargado de replicar las mecanicas de cada auto en Trucking Empire."}
+            userImage={'https://pbs.twimg.com/profile_images/1553927076847263744/z2rQDU2e_400x400.jpg'}
+        />
+
+        <TeamCard
+            username={'JustDeko'}
+            userRol={'Lead Builder - Developer'}
+            userDescription={"Deko es un maestro de la arquitectura y responsable de cada edificio, re-map y spot que verás en Trucking Empire."}
+            userImage={'https://yt3.googleusercontent.com/ICriXJqBdEizQWagSbYZHUyJTJyyJe8_1uaW_RP3sZgb0w4rP_J2oF34y9Dabl3c9CuSFJ8=s160-c-k-c0x00ffffff-no-rj'}
+        />
+          
+      </div>
+  </div>
+</section>
+
+<style>
+  .card {
+    @apply bg-gray-950 grid place-content-center rounded-lg text-white font-bold border border-gray-600  text-4xl
+  }
+</style>
